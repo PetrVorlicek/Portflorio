@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./static_files/background.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Carter One', cursive;
+    font-size: 12rem;
+    display: block;
+    line-height: 100%;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 2fr 3fr 2fr 2fr 75px;
+    grid-auto-rows: 50px;
+}
+
+.navbar {
+    /*grid-item*/
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 2;
+
+    /*flex-container*/
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-header {
+    /*grid-item*/
+    grid-column: 3 / span 2;
+    grid-row: 6 / span 7;
+}
+
+.arrow-down {
+    /*grid-item*/
+    grid-column: 6 / span 1;
+    grid-row: 3/ span 4;
+}
+
+.favico {
+    width: 35px;
+    height: 35px;
+}
+
+.instagram {
+    /*grid-item*/
+    grid-column: 1 / span 1;
+    grid-row: 16 / span 1;
+}
+
+.twitter {
+/*grid-item*/
+    grid-column: 1 / span 1;
+    grid-row: 15 / span 1;
+}
+
+.telegram {
+    /*grid-item*/    
+    grid-column: 1 / span 1;
+    grid-row: 14 / span 1;
+}
+
+.insta-tag {
+    /*grid-item*/
+    grid-column: 1 / span 1;
+    grid-row: 10 / span 4;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+.navbar-item {
+    flex-grow: 1;
+    text-decoration: underline;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.navbar-space {
+    flex-basis: 100px;
+    flex-grow: 5;
+    flex-shrink: 7;
+}
+
+#about {
+    /*grid-item*/    
+    grid-column: 2 / span 4;
+    grid-row: 20 / span 10;
+}
+
+#contact {
+    /*grid-item*/    
+    grid-column: 2 / span 4;
+    grid-row: 31 / span 10;
+}
+
+#projects {
+    /*grid-item*/    
+    grid-column: 2 / span 4;
+    grid-row: 42 / span 10;
+}
+
+/*Helper*/
+
+.center
+{
+    /*flex-container*/
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+footer {
+    position: absolute;
+    bottom:0;
+    text-decoration: underline;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    color: black;
+    margin: 10px 50px;
+}
+
+.disclosure {
+    font-family: 'Roboto Mono', monospace;
+    grid-column: 3 / span 2;
+    grid-row: 14 / span 2; 
+}
